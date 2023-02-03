@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+
+    android:orientation="vertical">
+
+
+    <EditText
+        android:id="@+id/numberField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:ems="10"
+        android:gravity="right"
+        android:textSize="50dp"
+        android:inputType="textPersonName"
+        android:layout_marginBottom="5dp"
+        android:text="" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <TableRow
+            android:layout_marginBottom="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+            <Button
+                android:id="@+id/btnC"
+                android:onClick="obrisiPolje"
+                android:layout_weight="1"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:text="C"
+                android:layout_marginRight="5dp"
+
+                android:background="@color/gray"></Button>
+
+            <Button
+                android:id="@+id/btnPlusMinus"
+                android:layout_weight="1"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:text="+/-"
+                android:layout_marginRight="5dp"
+                android:background="@color/gray"></Button>
+
+            <Button
+                android:id="@+id/btnDijeljenje"
+                android:onClick="klikNaOperaciju"
+                android:layout_weight="1"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:text="/"
+                android:layout_marginRight="5dp"
+                android:background="@color/gray"></Button>
+            <Button
+                android:id="@+id/btnMnozenje"
+                android:onClick="klikNaOperaciju"
+                android:layout_weight="1"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:text="*"
+                android:background="@color/black"></Button>
+        </TableRow>
+
+
+        <TableRow
+            android:layout_marginBottom="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <Button
+                android:id="@+id/btnBroj1"
+                android:onClick="klikNaBroj"
+                android:layout_weight="1"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:text="1"
+                android:layout_marginRight="5dp"
+                android:background="@color/gray"></Button>
+
+            <Button
+                android:id="@+id/btnBroj2"
+                android:onClick="klikNaBroj"
+                android:layout_weight="1"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:text="2"
+                android:layout_marginRight="5dp"
+                android:background="@color/gray"></Button>
+
+            <Button
+                android:id="@+id/btnBroj3"
+                android:onClick="klikNaBroj"
+                android:layout_weight="1"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:text="3"
+                android:layout_marginRight="5dp"
+                android:background="@color/gray"></Button>
+            <Button
+                android:id="@+id/btnModul"
+                android:onClick="klikNaOperaciju"
+                android:layout_weight="1"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:text="%"
+                android:background="@color/black"></Button>
+        </TableRow>
+
+        <TableRow
+            android:layout_marginBottom="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <Button
+                android:id="@+id/btnBroj4"
+                android:onClick="klikNaBroj"
+                android:layout_weight="1"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:text="4"
+                android:layout_marginRight="5dp"
+                android:background="@color/gray"></Button>
+
+            <Button
+                android:id="@+id/btnBroj5"
+                android:onClick="klikNaBroj"
+                android:layout_weight="1"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:text="5"
+                android:layout_marginRight="5dp"
+                android:background="@color/gray"></Button>
+
+            <Button
+                android:id="@+id/btnBroj6"
+                android:onClick="klikNaBroj"
+                android:layout_weight="1"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:text="6"
+                android:layout_marginRight="5dp"
+                android:background="@color/gray"></Button>
+            <Button
+                android:id="@+id/btnPlus"
+                android:onClick="klikNaOperaciju"
+                android:layout_weight="1"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:text="+"
+                android:background="@color/black"></Button>
+        </TableRow>
+
+
+        <TableRow
+            android:layout_marginBottom="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <Button
+                android:id="@+id/btnBroj7"
+                android:onClick="klikNaBroj"
+                android:layout_weight="1"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:text="7"
+                android:layout_marginRight="5dp"
+                android:background="@color/gray"></Button>
+
+            <Button
+                android:id="@+id/btnBroj8"
+                android:onClick="klikNaBroj"
+                android:layout_weight="1"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:text="8"
+                android:layout_marginRight="5dp"
+                android:background="@color/gray"></Button>
+
+            <Button
+                android:id="@+id/btnBroj9"
+                android:onClick="klikNaBroj"
+                android:layout_weight="1"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:text="9"
+                android:layout_marginRight="5dp"
+                android:background="@color/gray"></Button>
+            <Button
+                android:id="@+id/btnMinus"
+                android:onClick="klikNaOperaciju"
+                android:layout_weight="1"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:text="-"
+                android:background="@color/black"></Button>
+        </TableRow>
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnBroj0"
+            android:onClick="klikNaBroj"
+            android:layout_weight="2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="0"
+            android:layout_marginRight="5dp"
+            android:background="@color/gray"></Button>
+
+        <Button
+            android:id="@+id/btnTacka"
+            android:onClick="klikNaBroj"
+            android:layout_weight="2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="."
+            android:layout_marginRight="5dp"
+            android:background="@color/gray"></Button>
+        <Button
+            android:id="@+id/btnJednako"
+            android:onClick="klikNaJednako"
+            android:layout_weight="1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="="
+            android:background="@color/black"></Button>
+
+    </LinearLayout>
+</LinearLayout>
